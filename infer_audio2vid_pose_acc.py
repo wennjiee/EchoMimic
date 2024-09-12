@@ -1,6 +1,5 @@
 import argparse
 import os
-os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 import random
 from datetime import datetime
 from pathlib import Path
