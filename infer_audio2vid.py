@@ -203,7 +203,7 @@ def main():
                 face_mask[:, :] = 255
             else:
                 xyxy = select_bbox[:4]
-                xyxy = np.round(xyxy).astype('int')
+                xyxy = np.round(xyxy.astype('float')).astype('int')
                 rb, re, cb, ce = xyxy[1], xyxy[3], xyxy[0], xyxy[2]
                 r_pad = int((re - rb) * args.facemusk_dilation_ratio)
                 c_pad = int((ce - cb) * args.facemusk_dilation_ratio)

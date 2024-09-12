@@ -1,5 +1,6 @@
 import argparse
 import os
+os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 import random
 from datetime import datetime
 from pathlib import Path
@@ -197,7 +198,7 @@ def main():
             select_bbox = select_face(det_bboxes, probs)
             if select_bbox is not None:
                 xyxy = select_bbox[:4]
-                xyxy = np.round(xyxy).astype('int')
+                xyxy = np.round(xyxy.astype('float')).astype('int')
                 rb, re, cb, ce = xyxy[1], xyxy[3], xyxy[0], xyxy[2]
 
                 r_pad_crop = int((re - rb) * args.facecrop_dilation_ratio)
