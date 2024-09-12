@@ -2,3 +2,8 @@ ffmpeg-4.4-amd64-static
 pretrained_weights
 output
 __pycache__
+*.pkl
+*.wav
+*.jpg
+*.png
+*.mp4
