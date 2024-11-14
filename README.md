@@ -4,7 +4,7 @@
     <a href='https://github.com/yuange250' target='_blank'>Zhiyuan Chen</a><sup>*</sup>&emsp;
     <a href='https://github.com/JoeFannie' target='_blank'>Jiajiong Cao</a><sup>*</sup>&emsp;
     <a href='https://github.com/octavianChen' target='_blank'>Zhiquan Chen</a><sup></sup>&emsp;
-    <a href='https://github.com/lymhust' target='_blank'>Yuming Li</a><sup></sup>&emsp;
+    <a href='https://lymhust.github.io/' target='_blank'>Yuming Li</a><sup></sup>&emsp;
     <a href='https://github.com/' target='_blank'>Chenguang Ma</a><sup></sup>
 </div>
 <div align='center'>
