@@ -44,13 +44,13 @@ Terminal Technology Department, Alipay, Ant Group.
     
 <tr>
     <td width=30% style="border: none">
-        <video controls loop src="https://github.com/BadToBest/EchoMimic/assets/11451501/d014d921-9f94-4640-97ad-035b00effbfe" muted="false"></video>
+        <video controls loop src="https://github.com/antgroup/echomimic/assets/11451501/d014d921-9f94-4640-97ad-035b00effbfe" muted="false"></video>
     </td>
     <td width=30% style="border: none">
-        <video controls loop src="https://github.com/BadToBest/EchoMimic/assets/11451501/877603a5-a4f9-4486-a19f-8888422daf78" muted="false"></video>
+        <video controls loop src="https://github.com/antgroup/echomimic/assets/11451501/877603a5-a4f9-4486-a19f-8888422daf78" muted="false"></video>
     </td>
     <td width=30% style="border: none">
-        <video controls loop src="https://github.com/BadToBest/EchoMimic/assets/11451501/e0cb5afb-40a6-4365-84f8-cb2834c4cfe7" muted="false"></video>
+        <video controls loop src="https://github.com/antgroup/echomimic/assets/11451501/e0cb5afb-40a6-4365-84f8-cb2834c4cfe7" muted="false"></video>
     </td>
 </tr>
 
