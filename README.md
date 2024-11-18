@@ -24,7 +24,7 @@ Terminal Technology Department, Alipay, Ant Group.
     <a href='https://arxiv.org/abs/2407.08136'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
 
-## &#x1F4E3; &#x1F4E3; Updates
+## &#x1F4E3;&#x1F4E3; Updates
 * [2024.08.02] 🔥 EchoMimic is now available on [huggingface](https://huggingface.co/spaces/BadToBest/EchoMimic) with A100 GPU. Thanks Wenmeng Zhou@ModelScope.
 * [2024.07.25] 🔥🔥🔥 Accelerated models and pipe on **Audio Driven** are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames on V100 GPU)
 * [2024.07.23] 🔥 EchoMimic gradio demo on [modelscope](https://www.modelscope.cn/studios/BadToBest/BadToBest) is ready.
@@ -37,7 +37,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2024.07.12] 🔥 Our [paper](https://arxiv.org/abs/2407.08136) is in public on arxiv.
 * [2024.07.09] 🔥 We release our audio driven codes and models.
 
-## Gallery
+## &#x1F305;&#x1F305; Gallery
 ### Audio Driven (Sing)
 
 <table class="center">
