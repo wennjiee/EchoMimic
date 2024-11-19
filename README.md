@@ -24,7 +24,7 @@ Terminal Technology Department, Alipay, Ant Group.
     <a href='https://arxiv.org/abs/2407.08136'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
 
-## &#x1F4E3;&#x1F4E3; Updates
+## &#x1F4E3; Updates
 * [2024.08.02] 🔥 EchoMimic is now available on [huggingface](https://huggingface.co/spaces/BadToBest/EchoMimic) with A100 GPU. Thanks Wenmeng Zhou@ModelScope.
 * [2024.07.25] 🔥🔥🔥 Accelerated models and pipe on **Audio Driven** are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames on V100 GPU)
 * [2024.07.23] 🔥 EchoMimic gradio demo on [modelscope](https://www.modelscope.cn/studios/BadToBest/BadToBest) is ready.
@@ -37,7 +37,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2024.07.12] 🔥 Our [paper](https://arxiv.org/abs/2407.08136) is in public on arxiv.
 * [2024.07.09] 🔥 We release our audio driven codes and models.
 
-## &#x1F305;&#x1F305; Gallery
+## &#x1F305; Gallery
 ### Audio Driven (Sing)
 
 <table class="center">
@@ -130,7 +130,7 @@ Terminal Technology Department, Alipay, Ant Group.
 
 **（Some demo images above are sourced from image websites. If there is any infringement, we will immediately remove them and apologize.）**
 
-## Installation
+## ⚒️ Installation
 
 ### Download the Codes
 
@@ -245,7 +245,7 @@ python -u webgui.py --server_port=3000
 
 ```
 
-## Release Plans
+## 📝 Release Plans
 
 |  Status  | Milestone                                                                | ETA |
 |:--------:|:-------------------------------------------------------------------------|:--:|
@@ -257,7 +257,7 @@ python -u webgui.py --server_port=3000
 |    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
-## Acknowledgements
+## 🙏🏻 Acknowledgements
 
 We would like to thank the contributors to the [AnimateDiff](https://github.com/guoyww/AnimateDiff), [Moore-AnimateAnyone](https://github.com/MooreThreads/Moore-AnimateAnyone) and [MuseTalk](https://github.com/TMElyralab/MuseTalk) repositories, for their open research and exploration. 
 
@@ -265,7 +265,7 @@ We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) 
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
 
-## Citation
+## 📒 Citation
 
 If you find our work useful for your research, please consider citing the paper :
 
@@ -280,5 +280,5 @@ If you find our work useful for your research, please consider citing the paper 
 }
 ```
 
-## Star History
+## 🌟 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=antgroup/echomimic&type=Date)](https://star-history.com/#antgroup/echomimic&Date)
