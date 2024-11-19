@@ -257,7 +257,7 @@ python -u webgui.py --server_port=3000
 |    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
-## ⚖️ Disclaimer 🔗
+## ⚖️ Disclaimer
 This project is intended for academic research, and we explicitly disclaim any responsibility for user-generated content. Users are solely liable for their actions while using the generative model. The project contributors have no legal affiliation with, nor accountability for, users' behaviors. It is imperative to use the generative model responsibly, adhering to both ethical and legal standards.
 
 ## 🙏🏻 Acknowledgements
