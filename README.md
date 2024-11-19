@@ -274,11 +274,11 @@ If you find our work useful for your research, please consider citing the paper 
   title={EchoMimic: Lifelike Audio-Driven Portrait Animations through Editable Landmark Conditioning},
   author={Zhiyuan Chen, Jiajiong Cao, Zhiquan Chen, Yuming Li, Chenguang Ma},
   year={2024},
+  eprint={2407.08136},
   archivePrefix={arXiv},
   primaryClass={cs.CV}
 }
 ```
 
 ## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=BadToBest/EchoMimic&type=Date)](https://star-history.com/?spm=5176.28103460.0.0.342a3da23STWrU#BadToBest/EchoMimic&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=antgroup/echomimic&type=Date)](https://star-history.com/#antgroup/echomimic&Date)
