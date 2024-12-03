@@ -195,7 +195,7 @@ def main():
 
                 r_pad_crop = int((re - rb) * args.facecrop_dilation_ratio)
                 c_pad_crop = int((ce - cb) * args.facecrop_dilation_ratio)
-                crop_rect = [max(0, cb - c_pad_crop), max(0, rb - r_pad_crop), min(ce + c_pad_crop, face_img.shape[1]), min(re + c_pad_crop, face_img.shape[0])]
+                crop_rect = [max(0, cb - c_pad_crop), max(0, rb - r_pad_crop), min(ce + c_pad_crop, face_img.shape[1]), min(re + r_pad_crop, face_img.shape[0])]
                 print(crop_rect)
                 face_img, _ = crop_and_pad(face_img, crop_rect)
                 face_img = cv2.resize(face_img, (args.W, args.H))
