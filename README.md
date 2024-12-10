@@ -29,7 +29,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation. [GitHub](https://github.com/antgroup/echomimic_v2)
 
 ## &#x1F4E3; Updates
-* [2024.11.21] 🔥 EchoMimic is accepted by AAAI 2025.
+* [2024.12.10] 🔥 EchoMimic is accepted by AAAI 2025.
 * [2024.11.21] 🔥🔥🔥 We release our [EchoMimicV2](https://github.com/antgroup/echomimic_v2) codes and models.
 * [2024.08.02] 🔥 EchoMimic is now available on [huggingface](https://huggingface.co/spaces/BadToBest/EchoMimic) with A100 GPU. Thanks Wenmeng Zhou@ModelScope.
 * [2024.07.25] 🔥🔥🔥 Accelerated models and pipe on **Audio Driven** are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames on V100 GPU)
