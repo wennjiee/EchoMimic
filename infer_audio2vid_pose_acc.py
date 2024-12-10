@@ -33,14 +33,14 @@ import pickle
 from src.utils.motion_utils import motion_sync
 from src.utils.mp_utils  import LMKExtractor
 from src.utils.img_utils import pil_to_cv2, cv2_to_pil, center_crop_cv2, pils_from_video, save_videos_from_pils, save_video_from_cv2_list
-
+from tqdm import tqdm
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, default="./configs/prompts/animation_pose_acc.yaml")
     parser.add_argument("-W", type=int, default=512)
     parser.add_argument("-H", type=int, default=512)
-    parser.add_argument("-L", type=int, default=1200)
+    parser.add_argument("-L", type=int, default=1200) # 50s
     parser.add_argument("--seed", type=int, default=420)
     parser.add_argument("--facemusk_dilation_ratio", type=float, default=0.1)
     parser.add_argument("--facecrop_dilation_ratio", type=float, default=0.5)
@@ -231,7 +231,9 @@ def main():
                 except:
                     print("motion_sync error: face detection failed")
                     exit()
-                pose_save_dir = './{}'.format(ref_image_path.split('/')[-1].replace('.png', ''))
+                # pose_save_dir = './assets/{}_pose'.format(ref_image_path.split('/')[-1].replace('.png', '')).replace('.jpg', '')
+                dir_name = pose_dir.split('/')[-1].replace('.mp4', '')
+                pose_save_dir = f'./assets/pose_{dir_name}'
                 os.makedirs(pose_save_dir, exist_ok=True)
                 sequence_det_ms = motion_sync(sequence_driver_det, ref_det)
                 for i in range(len(sequence_det_ms)):
@@ -242,15 +244,16 @@ def main():
 
         # ==================== face_locator =====================
         pose_list = []
-        for index in range(len(os.listdir(pose_dir))):
+        for index in tqdm(range(len(os.listdir(pose_dir)))):
             tgt_musk_path = os.path.join(pose_dir, f"{index}.pkl")
 
             with open(tgt_musk_path, "rb") as f:
                 tgt_kpts = pickle.load(f)
             tgt_musk = visualizer.draw_landmarks((args.W, args.H), tgt_kpts)
             tgt_musk_pil = Image.fromarray(np.array(tgt_musk).astype(np.uint8)).convert('RGB')
-            pose_list.append(torch.Tensor(np.array(tgt_musk_pil)).to(dtype=weight_dtype, device="cuda").permute(2,0,1) / 255.0)
-        face_mask_tensor = torch.stack(pose_list, dim=1).unsqueeze(0)
+            # pose_list.append(torch.Tensor(np.array(tgt_musk_pil)).permute(2,0,1) / 255.0)
+            pose_list.append(torch.Tensor(np.array(tgt_musk_pil)).to(dtype=weight_dtype, device="cuda").permute(2,0,1) / 255.0) # 8G for 6500
+        face_mask_tensor = torch.stack(pose_list, dim=1).unsqueeze(0) # 500 ~ 1.5G? 1x3xNx512x512
         #face_mask_tensor = torch.zeros_like(face_mask_tensor)
 
 
